@@ -1,0 +1,125 @@
+
+#wait-text{
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+    text-align: center;
+
+}
+
+
+#wait-text>p{
+    color: #6d6969;
+    font-size: calc(var(--fontsize1) * 0.6);
+    font-weight: bold;
+}
+
+#wait-text>h1{
+    width: 100%;
+    text-align: center;
+
+    font-size: calc(var(--fontsize1) * 1.5);
+    color: var(--color1);
+
+    text-shadow: 3px 3px var(--color4),3.3px 3.3px white;
+
+    margin-bottom: 5vh;
+}
+
+
+#wait-text>#link-container{
+    background:#494545;
+    border: 3px solid var(--color2);
+    border-radius: 10vw;
+
+    width: 70%;
+
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0 10vh 0 10vh;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+
+    transition: 500ms;
+    -o-transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+}
+
+#wait-text>#link-container:hover{
+    box-shadow: 0 0 5px 5px white;
+}
+
+#link-container>span{
+    position: absolute;
+    bottom: 0;
+
+    color: #19d719;
+    font-size: calc(var(--fontsize1) * 0.6);
+    font-weight: bold;
+
+    transition: 500ms;
+    -o-transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+
+    transform: translateY(0) scale(0);
+    opacity: 0;
+}
+
+#link-container>svg{
+    width: 30px;
+}
+
+#link-container>p{
+    color: var(--color2);
+    font-size: calc(var(--fontsize1) * 0.6);
+    font-weight: bold;
+}
+
+#wait-animation{
+    height: calc(30vw);
+    width: calc(30vw);
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+#animation-airplane-1,
+#animation-airplane-2{
+    transform-origin: center;
+    animation: 10s wait-rotate linear infinite;
+}
+
+#animation-world{
+    transform-origin: center;
+    animation: 25s wait-rotate linear reverse infinite;
+}
+
+
+
+@keyframes wait-rotate{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #wait-animation{
+        height: calc(70vw);
+        width: calc(70vw);
+
+    }
+}

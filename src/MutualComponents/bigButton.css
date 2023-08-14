@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+.bigButton{
+    margin-left: 50%;
+    margin-top: 10vh;
+    transform: translateX(-50%);
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+
+    background: var(--color1);
+    color: var(--color3);
+    font-size: var(--fontsize1);
+
+    border-radius: .5vw;
+    border: .2vw solid transparent;
+
+    padding: 1vw;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px 2px var(--color2);
+
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+
+}
+
+
+.bigButton:active,
+.bigButton:hover{
+    outline: none;
+    color: var(--color1);
+    border: .2vw solid var(--color1);
+    background: transparent;
+}
+
+
+.bigButton:focus{
+    outline: none;
+    border: .2vw solid white;
+    box-shadow: 0 0 30px 2px white;
+}

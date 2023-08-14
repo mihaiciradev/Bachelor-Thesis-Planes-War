@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  background: var(--color4);
+
+  padding-bottom: 25vh;
+
+  scroll-behavior: smooth;
+}
+
+#page-1,
+#page-2,
+#page-3{
+  transition: 600ms;
+  -o-transition: 600ms;
+  -moz-transition: 600ms;
+  -webkit-transition: 600ms;
+}

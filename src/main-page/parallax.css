@@ -1,0 +1,168 @@
+/****************STARS*****************/
+#star1,
+#star15,
+#star3,
+#star21,
+#star22{
+    transform-box: fill-box;
+    animation: 3s shineStar linear alternate-reverse infinite;
+}
+#star20,
+#star7,
+#star16,
+#star9,
+#star10,
+#star11{
+    transform-box: fill-box;
+    animation: 4s shineStar linear alternate-reverse infinite;
+
+}
+#star12,
+#star3,
+#star14,
+#star2,
+#star8,
+#star17{
+    transform-box: fill-box;
+    animation: 5s shineStar linear alternate-reverse infinite;
+}
+#star18,
+#star19,
+#star6,
+#star13,
+#star4{
+    transform-box: fill-box;
+    animation: 10s shineStar linear alternate-reverse infinite;
+
+}
+
+@keyframes shineStar {
+    from{
+        opacity: 0;
+        transform: scale(.3);
+
+    }
+    to{
+        opacity: 1;
+        transform: scale(2)
+    }
+}
+
+
+/****************PLANES*****************/
+/*PLANE1*/
+#airplane1,
+#airplane2,
+#airplane3{
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#airplane1{
+    transform: translateX(-100%) rotateX(10deg);
+    animation: 20s plane1Fly linear infinite;
+}
+
+@keyframes plane1Fly {
+    0%{
+        transform: translateX(-100%) scale(1) rotateX(10deg);
+    }
+    40%,100%{
+        transform: translateX(1300%) scale(3) rotateX(10deg);
+    }
+}
+/*PLANE2*/
+
+#airplane2{
+    animation: 25s plane2Fly 3s linear infinite;
+}
+
+
+@keyframes plane2Fly {
+    0%{
+        transform: translateX(0%) scale(1) rotateZ(-5deg);
+    }
+    50%,100%{
+        transform: translateX(-1800%) translateY(-400%) scale(1.5) rotateZ(-5deg);
+    }
+}
+
+/*PLANE3*/
+#airplane3{
+    animation:35s plane3Fly linear infinite;
+    transform: translateX(-100%) 2.3s translateY(-100%);
+}
+
+
+@keyframes plane3Fly {
+    0%{
+        transform: translateX(-100%) translateY(-100%);
+    }
+    12%{
+        transform: translateX(+430%) translateY(200%) rotateZ(-20deg);
+    }
+    14%{
+        transform: translateX(+500%) translateY(200%) rotateZ(-35deg);
+    }
+    50%,100%{
+        transform: translateX(+2800%) translateY(250%)  rotateZ(-45deg);
+    }
+}
+
+/****************CLOUDS*****************/
+#cloud1,
+#cloud2{
+    transform-origin: bottom;
+    transform-box: fill-box;
+    transform: translateX(-15%);
+    opacity: .75;
+}
+
+#cloud1{
+    animation: 10s cloudsHang ease-in-out alternate-reverse infinite;
+}
+
+#cloud2{
+    animation: 8s cloudsHang ease-in-out alternate-reverse infinite;
+}
+
+@keyframes cloudsHang{
+    from{
+        transform: translateX(-15%);
+    }
+    to{
+        transform: translateX(15%);
+    }
+}
+
+/****************TREES*****************/
+#tree1,
+#tree2,
+#tree3,
+#tree4{
+    transform-origin: bottom;
+    transform-box: fill-box;
+    transform: rotateZ(-1deg);
+}
+
+#tree1{
+    animation: 1.5s treeHang ease-in-out alternate-reverse infinite;
+}
+#tree2{
+    animation: 2s treeHang linear alternate-reverse infinite;
+}
+#tree3{
+    animation: 1.7s treeHang linear 300ms alternate-reverse infinite;
+}
+#tree4{
+    animation: 1.8s treeHang linear alternate-reverse infinite;
+}
+
+@keyframes treeHang {
+    from{
+        transform: rotateZ(-1deg);
+    }
+    to{
+        transform: rotateZ(1deg);
+    }
+}

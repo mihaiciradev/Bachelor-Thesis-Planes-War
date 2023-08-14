@@ -1,0 +1,399 @@
+#configs-container{
+    width: 90%;
+    margin-top: 15vw;
+    margin-bottom: 5vh;
+
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.config{
+    width: 100%;
+}
+
+.config>h3{
+    padding-left: 4vw;
+    border-bottom: .2vw solid var(--color1);
+    color: var(--color1);
+    font-size: var(--fontsize1);
+}
+
+.config>p{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-bottom: 5vh;
+
+    text-align: center;
+
+    color: grey;
+    font-size: calc(var(--fontsize1) * 0.5)
+}
+
+/*CONFIGS*/
+.config-content{
+    width: 100%;
+    min-height: 2cm;
+}
+
+/***********************CANVAS SIZE******/
+#config-canvas-size{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#config-canvas-size-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-direction: column;
+}
+
+#config-canvas-size-buttons>button{
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: .5vw;
+    padding: 5px;
+    transition: 300ms;
+    -o-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+}
+
+#config-canvas-size-buttons>button:hover,
+#config-canvas-size-buttons>button:active,
+#config-canvas-size-buttons>button:focus{
+    outline: none;
+    box-shadow: 0 0 3px 2px white;
+}
+
+#config-canvas-size-text{
+    color: white;
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: 1vh;
+
+    font-size: var(--fontsize1);
+
+    padding: .5vw;
+}
+
+#config-canvas-size-canvas{
+
+    /*height: 15vw;*/
+    width: 15vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+}
+
+.config-canvas-size-canvas-square{
+    box-shadow: 0 0 .1vw 0 white;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+/***********************NUMBER OF AIRPLANES******/
+#config-number-of-airplanes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#config-number-of-airplanes-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-direction: column;
+}
+
+#config-number-of-airplanes-buttons>button{
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: .5vw;
+    padding: 5px;
+    transition: 300ms;
+    -o-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+}
+#config-number-of-airplanes-buttons>button:hover,
+#config-number-of-airplanes-buttons>button:active,
+#config-number-of-airplanes-buttons>button:focus{
+    outline: none;
+    box-shadow: 0 0  3px 2px white;
+}
+
+#config-number-of-airplanes-text{
+    color: white;
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: 1vh;
+
+    font-size: var(--fontsize1);
+
+    padding: .5vw 2vw .5vw 2vw;
+}
+
+#config-number-of-airplanes-planes{
+    border: .2vh solid white;
+    border-radius: 2vh;
+    width: 30vw;
+    height: 20vw;
+
+    padding: 1vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 2vw;
+}
+
+.config-number-of-airplanes-planes-plane{
+    width: 8vw;
+    height: 8vw;
+}
+
+/***********************CONFIGURE THE FLEET******/
+
+#configure-the-fleet-container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10vh;
+}
+
+.configure-the-fleet-plane{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.configure-the-fleet-plane>h3{
+    text-align: center;
+    font-size: calc(var(--fontsize1) * 2);
+    color: var(--color1);
+}
+
+.configure-the-fleet-plane-svg{
+    width: 20vw;
+    height: 20vw;
+
+    opacity: .8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.configure-the-fleet-plane-svg>svg{
+    border-radius: 3vh;
+}
+
+.configure-the-fleet-plane-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.configure-the-fleet-plane-buttons>p{
+    color: white;
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: 1vh;
+
+    font-weight: bold;
+
+    width: 10vh;
+    text-align: center;
+
+    font-size: var(--fontsize1);
+
+    padding: .5vw 2.3vh .5vw 2.3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.configure-the-fleet-plane-buttons>button{
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: .5vw;
+    padding: 5px;
+    transition: 300ms;
+    -o-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+}
+.configure-the-fleet-plane-buttons>button:hover,
+.configure-the-fleet-plane-buttons>button:active,
+.configure-the-fleet-plane-buttons>button:focus{
+    outline: none;
+    box-shadow: 0 0  3px 2px white;
+}
+
+/***********************MODIFY THE ATTACKS******/
+
+#plan-your-strikes-container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10vh;
+}
+
+.plan-your-strikes-strike{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plan-your-strikes-strike-atk{
+
+    width: 45%;
+}
+
+.plan-your-strikes-strike-atk p{
+    color: white;
+    text-align: center;
+}
+.plan-your-strikes-strike-atk hr{
+    border: none;
+    border-top: 2px solid var(--color1);
+}
+.plan-your-strikes-strike-atk-times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+.plan-your-strikes-strike-atk-times>button{
+    background: var(--color1);
+    border: .2vw solid var(--color2);
+    border-radius: .5vw;
+    padding: 5px;
+    transition: 300ms;
+    -o-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+
+    width: 40px;
+}
+
+.plan-your-strikes-strike-atk-times>button:hover,
+.plan-your-strikes-strike-atk-times>button:active,
+.plan-your-strikes-strike-atk-times>button:focus{
+    outline: none;
+    box-shadow: 0 0  3px 2px white;
+}
+
+.plan-your-strikes-strike-svg{
+    width: 15vw;
+}
+
+/***********************CHAT AVAILABILITY******/
+
+#chat-avilability-lever{
+    margin-top: 5vw;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    width:90px;
+    height: 40px;
+
+    background: var(--color1);
+
+    border-radius: 50px;
+    border: 5px solid #414947;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: 700ms;
+    -o-transition: 700ms;
+    -moz-transition: 700ms;
+    -webkit-transition: 700ms;
+}
+
+#chat-avilability-lever>svg{
+    width: 25%;
+    transition: 1000ms ease-in-out;
+    -o-transition: 1000ms ease-in-out-in;
+    -moz-transition: 1000ms ease-in-out;
+    -webkit-transition: 1000ms ease-in-out;
+}
+
+#chat-availability-x-svg{
+    opacity: 0;
+}
+
+#chat-avilability-lever>#ball{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+
+    border-radius: 100%;
+
+    background: #E2E0E0;
+    border: 2px solid #414947;
+
+    transition: 700ms;
+    -o-transition: 700ms;
+    -moz-transition: 700ms;
+    -webkit-transition: 700ms;
+
+    transform: translateX(+60%);
+}
+
+/***********************SUMMARY******/
+
+.summary{
+    width: 100%;
+}
+
+.summary>h3{
+    padding-left: 4vw;
+    border-bottom: .2vw solid var(--color1);
+    color: var(--color1);
+    font-size: var(--fontsize1);
+}
+
+.summary>p{
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+    font-size: calc(var(--fontsize1) * .7);
+
+}

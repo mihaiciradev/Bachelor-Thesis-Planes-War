@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+#perks-container{
+    margin-top: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    row-gap: 3vw;
+    column-gap: 10vw;
+
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.perk{
+    min-width: 5cm;
+}
+.perk>svg{
+    width: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(75%);
+}
+#perks-container>h2{
+    width: 100%;
+    text-align: center;
+
+    font-size: calc(var(--fontsize1) * 2);
+    color: var(--color1);
+
+    text-shadow: 3px 3px var(--color4),3.3px 3.3px white;
+}
+.perk>p{
+    background: var(--color3);
+    color: var(--color1);
+    text-align: center;
+
+    padding: 1vw;
+    font-family: 'Mukta', sans-serif;
+    font-size: calc(var(--fontsize1) * 0.9);
+
+    border-radius: 1vw;
+    box-shadow:0 0 20px 2px rgba(255,255,255,0.7)
+}

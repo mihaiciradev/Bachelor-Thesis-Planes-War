@@ -1,0 +1,22 @@
+#not-available>h1{
+    width: 100%;
+    text-align: center;
+
+    font-size: calc(var(--fontsize1) * 1.5);
+    color: var(--color1);
+
+    text-shadow: 3px 3px var(--color4),3.3px 3.3px white;
+
+    margin-bottom: 5vh;
+}
+
+#not-available>p{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-bottom: 5vh;
+
+    text-align: center;
+
+    color: grey;
+    font-size: calc(var(--fontsize1) * 0.5)
+}
