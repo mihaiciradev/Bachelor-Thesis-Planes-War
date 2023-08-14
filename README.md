@@ -1,4 +1,4 @@
-# War of Airplanes [en]
+# Planes war [en]
 
 ### Project "Planes war"
 
