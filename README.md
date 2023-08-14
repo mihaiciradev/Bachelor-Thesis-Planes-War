@@ -1,6 +1,6 @@
 # War of Airplanes [en]
 
-### Project "War of Airplanes"
+### Project "Planes war"
 
 This repository contains the source code of the application (thesis work) "War of Airplanes." The application represents a digitized version of the board game where two players use a sheet of paper to place their fleet of airplanes without the opponent knowing their positions. The challenge lies in the strategic placement of airplanes and shooting down enemy planes.
 
